@@ -126,7 +126,7 @@ function deliveryOptionHTML() {
               ${dateString}
             </div>
             <div class="delivery-option-price">
-              $4.99 - Shipping
+             ${priceString} Shipping
             </div>
           </div>
         </div>
