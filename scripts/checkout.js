@@ -58,14 +58,14 @@ cartSummaryHTML += `
         <div class="delivery-options-title">
           Choose a delivery option:
         </div>
-        ${deliveryOptionHTML(matchingProduct)}
+        ${deliveryOptionHTML(matchingProduct, cartItem)}
       </div>
     </div>
   </div>
 `
 });
 
-function deliveryOptionHTML(matchingProduct) {
+function deliveryOptionHTML(matchingProduct, cartItem) {
 
 let html = '';
 
@@ -81,11 +81,15 @@ let html = '';
     const priceString = deliveryOption.priceCents === 0
     ? 'FREE'
     : `$${formatCurrency(deliveryOption.priceCents)} -`;
+
+    const isChecked = deliveryOption.id === cartItem.deliveryOption;
+
     html += `
         <div class="delivery-option">
           <input type="radio"
-            class="delivery-option-input"
-            name="delivery-option-${matchingProduct.id}">
+           ${isChecked ?'checked' : ''}
+           class="delivery-option-input"
+           name="delivery-option-${matchingProduct.id}">
           <div>
             <div class="delivery-option-date">
               ${dateString}
