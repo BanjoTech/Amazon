@@ -51,3 +51,7 @@ export function removeFromCart (productId) {
 
   saveToStorage();
 }
+
+function updateDeliveryOption(productId, deliveryOptionId) {
+
+}
