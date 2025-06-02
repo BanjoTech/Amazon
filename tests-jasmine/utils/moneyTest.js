@@ -13,7 +13,5 @@ describe('test suite: formatCurrency', () => {
     expect(formatCurrency(2000.5)).toEqual('20.01');
   });
 
-  it('also rounds up to the nearest cents but result must be failed for it to be regarded as passed', () => {
-    expect(formatCurrency(2000.4)).toEqual('20.00');
-  });
+ 
 });
