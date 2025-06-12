@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // prompt('Hi! how are you?');
+
+    console.log(Math.floor(Math.random() * 100));
+
+    let binNr2 = 0b100;
+    console.log(binNr2);
+
+    let sym1 = Symbol("JavaScript is fun!");
+    let sym2 = Symbol("JavaScript is fun!");
+    console.log("These two Symbols are the same:", sym1 === sym2);
+
+    let nr1 = 2;
+    let nr2 = 2;
+    console.log(nr1 + nr2);
+
+
+    function likkleSmt() {
+      const myName = 'Yinka';
+      const myAge = 24;
+      const bool = "i can code javascript";
+      const canCodeJavaScript = (bool === "i can code javascript");
+      console.log(`Hello, my name is ${myName}, i am ${myAge} years old and ${bool}: ${canCodeJavaScript}`);
+
+      // if (bool === 'i can code javascript') {
+      //   canCodeJavaScript = Boolean(bool);
+      // } else {
+      //   canCodeJavaScript = 'false';
+      // }
+    }
+    likkleSmt();
+  </script>
+</body>
+</html>
